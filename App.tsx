@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import ListItem from './list-item';
+import ItemList from './item-list';
 import UserProfile from './user-profile';
 
 import {createStackNavigator, createAppContainer} from 'react-navigation';
@@ -15,7 +15,7 @@ export default createAppContainer(AppNavigator);
 export default function App(props) {
   return (
     <View style={styles.container}>
-      <ListItem navigation={props.navigation}/>
+      <ItemList navigation={props.navigation}/>
     </View>
   );
 }
